@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 
 from funcoes import pipeline
 
-df = pd.read_csv('PIPELINE-CI/adult.csv', na_values=['#NAME?']) # Ajuste o caminho conforme necessário
+df = pd.read_csv('adult.csv', na_values=['#NAME?']) # Ajuste o caminho conforme necessário
 X = df.drop('income', axis=1)
 y = df['income']
 
