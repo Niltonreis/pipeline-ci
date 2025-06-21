@@ -1,8 +1,11 @@
 import pandas as pd
+import numpy as np
 from sklearn.utils.validation import check_is_fitted
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 from funcoes import pipeline
+
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.1, random_state=42
