@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.utils.validation import check_is_fitted
 from sklearn.model_selection import train_test_split
 
-from pipeline import create_pipeline
+from funcoes import pipeline
 
 df = pd.read_csv('pipeline-ci/adult.csv', na_values=['#NAME?']) # Ajuste o caminho conforme necessário
 X = df.drop('income', axis=1)
